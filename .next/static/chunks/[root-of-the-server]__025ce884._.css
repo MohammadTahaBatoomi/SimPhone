@@ -454,4 +454,89 @@
   }
 }
 
+body {
+  background: #cfcfcf;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.iphone-13 {
+  background: #000;
+  border: 12px solid #000;
+  border-radius: 60px;
+  width: 390px;
+  height: 844px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .6);
+}
+
+.iphone-13 iframe {
+  scrollbar-width: none;
+  border: none;
+  border-radius: 48px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.iphone-13 iframe::-webkit-scrollbar {
+  display: none;
+}
+
+.notch {
+  z-index: 10;
+  background: #000;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  width: 210px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.power-button {
+  background: #333;
+  border-radius: 3px;
+  width: 6px;
+  height: 90px;
+  position: absolute;
+  top: 230px;
+  right: -6px;
+}
+
+.silent {
+  background: #555;
+  border-radius: 3px;
+  width: 6px;
+  height: 35px;
+  position: absolute;
+  top: 140px;
+  left: -6px;
+}
+
+.volume-up {
+  background: #333;
+  border-radius: 3px;
+  width: 6px;
+  height: 55px;
+  position: absolute;
+  top: 200px;
+  left: -6px;
+}
+
+.volume-down {
+  background: #333;
+  border-radius: 3px;
+  width: 6px;
+  height: 55px;
+  position: absolute;
+  top: 270px;
+  left: -6px;
+}
+
 /*# sourceMappingURL=%5Broot-of-the-server%5D__025ce884._.css.map*/
