@@ -15,7 +15,7 @@ body {
   border: 12px solid #000;
   background: #000;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 0 40px rgba(0,0,0,0.6);
 }
 
@@ -50,43 +50,73 @@ body {
 /* دکمه پاور (سمت راست) */
 .power-button {
   position: absolute;
-  right: -6px;
-  top: 230px;
-  width: 6px;
-  height: 90px;
-  background: #333;
-  border-radius: 3px;
+  right: -15px;
+  top: 200px;
+  width: 10px;
+  height: 100px;
+  background: #ff0000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255,0,0,0.8);
+  border: 2px solid #cc0000;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 /* دکمه سایلنت */
 .silent {
   position: absolute;
-  left: -6px;
-  top: 140px;
-  width: 6px;
-  height: 35px;
-  background: #555;
-  border-radius: 3px;
+  left: -15px;
+  top: 120px;
+  width: 10px;
+  height: 40px;
+  background: #00ff00;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,255,0,0.8);
+  border: 2px solid #00cc00;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 /* دکمه ولوم بالا */
 .volume-up {
   position: absolute;
-  left: -6px;
-  top: 200px;
-  width: 6px;
-  height: 55px;
-  background: #333;
-  border-radius: 3px;
+  left: -15px;
+  top: 180px;
+  width: 10px;
+  height: 60px;
+  background: #0000ff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,255,0.8);
+  border: 2px solid #0000cc;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 /* دکمه ولوم پایین */
 .volume-down {
   position: absolute;
-  left: -6px;
-  top: 270px;
-  width: 6px;
-  height: 55px;
-  background: #333;
-  border-radius: 3px;
+  left: -15px;
+  top: 250px;
+  width: 10px;
+  height: 60px;
+  background: #ffff00;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255,255,0,0.8);
+  border: 2px solid #cccc00;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* افکت hover برای دکمه ها */
+.power-button:hover,
+.silent:hover,
+.volume-up:hover,
+.volume-down:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 0 20px currentColor;
 }
