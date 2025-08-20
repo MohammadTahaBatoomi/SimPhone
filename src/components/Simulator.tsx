@@ -9,9 +9,10 @@ function Simulator() {
         <div className="silent"></div>
         <div className="volume-up"></div>
         <div className="volume-down"></div>
-        <iframe src="http://localhost:3000"></iframe>
+        <iframe src="https://sabzlearn.ir/"></iframe>
       </div>
-  </>
+   </>
+  
   )
 }
 
