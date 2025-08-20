@@ -501,10 +501,10 @@ body {
 
 .power-button {
   opacity: 1;
-  z-index: 9999;
+  z-index: -1;
   cursor: pointer;
-  background: #000;
-  border: 1px solid #000;
+  background: #424242;
+  border: 1px solid #424242;
   border-radius: 4px;
   width: 10px;
   height: 100px;
@@ -516,10 +516,10 @@ body {
 
 .silent {
   opacity: 1;
-  z-index: 9999;
+  z-index: -1;
   cursor: pointer;
-  background: #000;
-  border: 1px solid #000;
+  background: #424242;
+  border: 1px solid #424242;
   border-radius: 4px;
   width: 10px;
   height: 40px;
@@ -532,9 +532,9 @@ body {
 .volume-up {
   opacity: 1;
   cursor: pointer;
-  z-index: 9999;
-  background: #000;
-  border: 1px solid #000;
+  z-index: -1;
+  background: #424242;
+  border: 1px solid #424242;
   border-radius: 4px;
   width: 10px;
   height: 60px;
@@ -547,9 +547,9 @@ body {
 .volume-down {
   opacity: 1;
   cursor: pointer;
-  z-index: 9999;
-  background: #000;
-  border: 1px solid #000;
+  z-index: -1;
+  background: #424242;
+  border: 1px solid #424242;
   border-radius: 4px;
   width: 10px;
   height: 60px;

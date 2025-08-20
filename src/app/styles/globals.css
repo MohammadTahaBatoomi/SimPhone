@@ -50,12 +50,12 @@ body {
     top: 180px;
     width: 10px;
     height: 100px;
-    background: #000;
+    background: #424242;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #424242;
     opacity: 1;
     transition: all 0.3s ease;
-    z-index: 9999;
+    z-index: -1;
     cursor: pointer;
 }
 
@@ -65,12 +65,12 @@ body {
     top: 120px;
     width: 10px;
     height: 40px;
-    background: #000;
+    background: #424242;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #424242;
     opacity: 1;
     transition: all 0.3s ease;
-    z-index: 9999;
+    z-index: -1;
     cursor: pointer;
 }
 
@@ -80,13 +80,13 @@ body {
     top: 180px;
     width: 10px;
     height: 60px;
-    background: #000;
+    background: #424242;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #424242;
     opacity: 1;
     transition: all 0.3s ease;
     cursor: pointer;
-    z-index: 9999;
+    z-index: -1;
 }
 
 .volume-down {
@@ -95,13 +95,13 @@ body {
     top: 250px;
     width: 10px;
     height: 60px;
-    background: #000;
+    background: #424242;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #424242;
     opacity: 1;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 9999;
+    z-index: -1;
 }
 
 .indicator {
