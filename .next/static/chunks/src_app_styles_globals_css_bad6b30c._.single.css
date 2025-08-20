@@ -374,8 +374,8 @@ body {
   background: #000;
   border: 14px solid #000;
   border-radius: 60px;
-  width: 390px;
-  height: 844px;
+  width: 420px;
+  height: 890px;
   position: relative;
   overflow: visible;
   box-shadow: 0 0 20px rgba(0, 0, 0, .2);
@@ -473,7 +473,7 @@ body {
   background: #525253;
   border-radius: 3px;
   width: 120px;
-  height: 5px;
+  height: 6px;
   transition: all .3s;
   position: absolute;
   bottom: 12px;

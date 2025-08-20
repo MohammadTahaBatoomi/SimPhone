@@ -8,8 +8,8 @@ body {
 }
 
 .iphone-13 {
-    width: 390px;
-    height: 844px;
+    width: 420px;
+    height: 890px;
     border-radius: 60px;
     border: 14px solid #000;
     background: #000;
@@ -111,7 +111,7 @@ body {
     cursor: pointer;
     transform: translateX(-50%);
     width: 120px;
-    height: 5px;
+    height: 6px;
     background: #525253;
     border-radius: 3px;
     opacity: 0.8;
