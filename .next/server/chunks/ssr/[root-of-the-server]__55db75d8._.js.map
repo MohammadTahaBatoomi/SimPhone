@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///home/mohammad-taha/Taha/github/SimPhone/src/components/Simulator.tsx"],"sourcesContent":["import React from 'react'\n\nfunction Simulator() {\n  return (\n    <>\n      <div className=\"iphone-13\">\n        <div className=\"notch\"></div>\n        <div className=\"power-button\"></div>\n        <div className=\"silent\"></div>\n        <div className=\"volume-up\"></div>\n        <div className=\"volume-down\"></div>\n        <iframe src=\"http://localhost:3000\"></iframe>\n      </div>\n  </>\n  )\n}\n\nexport default Simulator;"],"names":[],"mappings":";;;;;;AAEA,SAAS;IACP,qBACE;kBACE,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAO,KAAI;;;;;;;;;;;;;AAIpB;uCAEe","debugId":null}},
+    {"offset": {"line": 77, "column": 0}, "map": {"version":3,"sources":["file:///home/mohammad-taha/Taha/github/SimPhone/src/app/page.tsx"],"sourcesContent":["import React from 'react'\nimport Simulator from '@/components/Simulator'\n\nfunction page() {\n  return (\n    <Simulator />\n  )\n}\n\nexport default page "],"names":[],"mappings":";;;;;AACA;;;AAEA,SAAS;IACP,qBACE,8OAAC,0IAAS;;;;;AAEd;uCAEe","debugId":null}}]
+}

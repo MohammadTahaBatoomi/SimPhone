@@ -1,9 +1,10 @@
 import React from 'react'
+import Simulator from '@/components/Simulator'
 
 function page() {
   return (
-    <div>page</div>
+    <SimulSimulatortor />
   )
 }
 
-export default page
+export default page 

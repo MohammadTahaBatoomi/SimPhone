@@ -1,4 +1,5 @@
 {
+  "pages": {},
   "app": {
     "[project]/src/app/page": [
       "static/media/caa3a2e1cccd8315-s.p.6435ea53.woff2",
@@ -6,6 +7,5 @@
     ]
   },
   "appUsingSizeAdjust": true,
-  "pages": {},
   "pagesUsingSizeAdjust": false
 }
