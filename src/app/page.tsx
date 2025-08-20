@@ -3,7 +3,7 @@ import Simulator from '@/components/Simulator'
 
 function page() {
   return (
-    <SimulSimulatortor />
+    <Simulator />
   )
 }
 

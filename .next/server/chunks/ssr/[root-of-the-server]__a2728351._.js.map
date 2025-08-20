@@ -2,6 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///home/mohammad-taha/Taha/github/SimPhone/src/app/page.tsx"],"sourcesContent":["import React from 'react'\nimport Simulator from '@/components/Simulator'\n\nfunction page() {\n  return (\n    <SimulSimulatortor />\n  )\n}\n\nexport default page "],"names":[],"mappings":";;;;;;AAGA,SAAS;IACP,qBACE,8OAAC;;;;;AAEL;uCAEe","debugId":null}}]
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}}]
 }
