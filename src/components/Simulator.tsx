@@ -9,6 +9,7 @@ function Simulator() {
         <div className="silent"></div>
         <div className="volume-up"></div>
         <div className="volume-down"></div>
+        <div className="indicator"></div>
         <iframe src="https://sabzlearn.ir/"></iframe>
       </div>
    </>

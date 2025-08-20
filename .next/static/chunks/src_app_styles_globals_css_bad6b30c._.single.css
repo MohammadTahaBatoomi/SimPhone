@@ -378,7 +378,7 @@ body {
   height: 844px;
   position: relative;
   overflow: visible;
-  box-shadow: 0 0 40px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
 
 .iphone-13 iframe {
@@ -465,6 +465,20 @@ body {
   position: absolute;
   top: 250px;
   left: -17px;
+}
+
+.indicator {
+  cursor: pointer;
+  opacity: .8;
+  background: #525253;
+  border-radius: 3px;
+  width: 120px;
+  height: 5px;
+  transition: all .3s;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=src_app_styles_globals_css_bad6b30c._.single.css.map*/

@@ -15,7 +15,7 @@ body {
     background: #000;
     position: relative;
     overflow: visible;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .iphone-13 iframe {
@@ -102,4 +102,18 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 9999;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: #525253;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
