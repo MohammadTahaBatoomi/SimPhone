@@ -9,9 +9,7 @@ body {
 
 .iphone-13 {
     width: 390px;
-    /* عرض iPhone 13 */
     height: 844px;
-    /* ارتفاع iPhone 13 */
     border-radius: 60px;
     border: 14px solid #000;
     background: #000;
@@ -20,9 +18,6 @@ body {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
 }
 
-
-/* صفحه داخل گوشی */
-
 .iphone-13 iframe {
     width: 100%;
     height: 100%;
@@ -30,16 +25,11 @@ body {
     border-radius: 48px;
     overflow: hidden;
     scrollbar-width: none;
-    /* Firefox */
 }
 
 .iphone-13 iframe::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari */
 }
-
-
-/* ناچ (notch) */
 
 .notch {
     position: absolute;
@@ -53,9 +43,6 @@ body {
     border-bottom-right-radius: 22px;
     z-index: 10;
 }
-
-
-/* دکمه پاور (سمت راست) */
 
 .power-button {
     position: absolute;
@@ -72,9 +59,6 @@ body {
     cursor: pointer;
 }
 
-
-/* دکمه سایلنت */
-
 .silent {
     position: absolute;
     left: -17px;
@@ -90,9 +74,6 @@ body {
     cursor: pointer;
 }
 
-
-/* دکمه ولوم بالا */
-
 .volume-up {
     position: absolute;
     left: -17px;
@@ -107,9 +88,6 @@ body {
     cursor: pointer;
     z-index: 9999;
 }
-
-
-/* دکمه ولوم پایین */
 
 .volume-down {
     position: absolute;
