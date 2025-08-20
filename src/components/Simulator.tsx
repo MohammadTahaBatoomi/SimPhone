@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Simulator() {
   return (
-    <div className="flex items-center justify-center p-6">
+    <div className="flex items-center justify-center p-4">
       <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-visible shadow-[0_0_20px_rgba(0,0,0,0.2)]">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[35px] bg-black rounded-b-[22px] z-10" />
 
