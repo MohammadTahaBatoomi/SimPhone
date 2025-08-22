@@ -10,7 +10,7 @@ function Loading() {
           alt="appele_logo"
         />
       </div>
-      <div className="w-1/6 h-1.5 bg-gray-700 rounded-full overflow-hidden">
+      <div className="w-1/6 h-1 bg-gray-700 rounded-full overflow-hidden">
         <div className="h-full bg-white loading-bar"></div>
       </div>
 

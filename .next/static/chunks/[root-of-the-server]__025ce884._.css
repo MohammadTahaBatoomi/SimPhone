@@ -615,6 +615,10 @@
     display: flex;
   }
 
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
