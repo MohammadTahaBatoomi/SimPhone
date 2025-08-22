@@ -271,16 +271,29 @@ function Page() {
             if (savedAddress) {
                 setAddress(savedAddress);
             }
+            const interval = setInterval({
+                "Page.useEffect.interval": ()=>{
+                    const current = localStorage.getItem('address');
+                    if (current !== address) {
+                        setAddress(current);
+                    }
+                }
+            }["Page.useEffect.interval"], 500);
+            return ({
+                "Page.useEffect": ()=>clearInterval(interval)
+            })["Page.useEffect"];
         }
-    }["Page.useEffect"], []);
+    }["Page.useEffect"], [
+        address
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: address ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Simulator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 18,
+            lineNumber: 28,
             columnNumber: 18
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$AddressInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 18,
+            lineNumber: 28,
             columnNumber: 34
         }, this)
     }, void 0, false);
