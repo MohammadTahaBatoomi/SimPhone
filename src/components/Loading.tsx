@@ -2,7 +2,7 @@ import React from "react";
 
 function Loading() {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-black">
+    <div className="flex flex-col items-center justify-center w-full h-full rounded-2xl bg-black">
       <div className="mb-6">
         <img
           src="/images/8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.webp"
@@ -10,7 +10,7 @@ function Loading() {
           alt="appele_logo"
         />
       </div>
-      <div className="w-1/6 h-1 bg-gray-700 rounded-full overflow-hidden">
+      <div className="w-3/6 h-1 bg-gray-700 rounded-full overflow-hidden">
         <div className="h-full bg-white loading-bar"></div>
       </div>
 
@@ -20,7 +20,7 @@ function Loading() {
           to { width: 100%; }
         }
         .loading-bar {
-          animation: loading 35s linear forwards;
+          animation: loading 5s linear forwards;
         }
       `}</style>
     </div>
