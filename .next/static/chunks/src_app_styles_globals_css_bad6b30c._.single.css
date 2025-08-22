@@ -566,6 +566,10 @@
     height: calc(var(--spacing) * 30);
   }
 
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+
   .h-\[6px\] {
     height: 6px;
   }
@@ -628,6 +632,10 @@
 
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
 
   .w-\[10px\] {
@@ -693,6 +701,10 @@
 
   .justify-center {
     justify-content: center;
+  }
+
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
 
   .overflow-hidden {
@@ -775,6 +787,10 @@
     border-color: var(--color-gray-900);
   }
 
+  .border-white {
+    border-color: var(--color-white);
+  }
+
   .bg-\[\#424242\] {
     background-color: #424242;
   }
@@ -807,6 +823,18 @@
     padding: calc(var(--spacing) * 4);
   }
 
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+
+  .text-black {
+    color: var(--color-black);
+  }
+
   .text-white {
     color: var(--color-white);
   }
@@ -825,6 +853,12 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, -webkit-text-decoration-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -834,6 +868,12 @@
   .duration-300 {
     --tw-duration: .3s;
     transition-duration: .3s;
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-gray-300:hover {
+      background-color: var(--color-gray-300);
+    }
   }
 
   .focus\:ring-1:focus {

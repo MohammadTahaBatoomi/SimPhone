@@ -1,10 +1,21 @@
-import React from 'react'
-import Simulator from '@/components/Simulator'
+"use client";
+import React, { useState, useEffect } from 'react';
+import Simulator from '@/components/Simulator';
+import AddressInput from '@/components/AddressInput';
 
-function page() {
+export default function Page() {
+  const [address, setAddress] = useState(null);
+
+  useEffect(() => {
+    const savedAddress = localStorage.getItem('address');
+    if (savedAddress) {
+      setAddress(savedAddress);
+    }
+  }, []);
+
   return (
-    <Simulator />
-  )
+    <>
+      {address ? <Simulator /> : <AddressInput />}
+    </>
+  );
 }
-
-export default page 
