@@ -1,5 +1,5 @@
 import React from 'react'
-import Simulator from '@/components/Simulator'
+import Simulator from '@/components/Loading'
 
 function page() {
   return (
