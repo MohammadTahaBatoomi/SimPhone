@@ -4,7 +4,7 @@ import React from "react";
 import Loading from "./Loading";
 
 export default function Simulator() {
-  let test = false; // یا true برای تست iframe
+  let address = localStorage.getItem('address');
 
   return (
     <div className="flex items-center justify-center p-4">
@@ -21,10 +21,10 @@ export default function Simulator() {
 
         <div className="absolute bottom-[12px] left-1/2 transform -translate-x-1/2 w-[120px] h-[6px] bg-[#525253] rounded-[3px] opacity-80 cursor-pointer" />
 
-        {test ? (
+        {address ? (
           <iframe
             className="sim-iframe w-full h-full border-none rounded-[48px] overflow-hidden"
-            src="https://sabzlearn.ir/"
+            src={address}
             title="Device Preview"
             style={{ scrollbarWidth: "none" }}
           />
