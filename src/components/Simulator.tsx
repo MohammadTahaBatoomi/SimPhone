@@ -29,12 +29,12 @@ export default function Simulator() {
   return (
     <div className="flex items-center justify-center p-4">
       <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[35px] bg-white rounded-b-[22px] z-10" />
-        <div className="absolute top-2 left-0 right-0 flex justify-between px-4 text-white font-bold text-sm z-20">
-          <div className="ml-8 font-sans">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[180px] h-[35px] bg-black rounded-b-[22px] z-10" />
+        <div className="absolute top-0 left-0 right-0 flex justify-between px-4 py-[13px] text-black bg-white font-bold text-[15px] z-5">
+          <div className="ml-6 font-sans">
             {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })}
           </div>
-          <div className="flex items-center space-x-1 text-white text-lg font-bold font-sans mr-2">
+          <div className="flex items-center space-x-1 text-black text-xl font-bold font-sans mr-3">
             <TbAntennaBars5 />
             <IoIosWifi />
             <IoBatteryFullOutline />
@@ -49,7 +49,7 @@ export default function Simulator() {
 
         {address && (
           <iframe
-            className={`sim-iframe mt-8.5 w-full h-full border-none rounded-b-[48px] overflow-hidden ${
+            className={`sim-iframe mt-11.5 w-full h-full border-none rounded-b-[48px] overflow-hidden ${
               isLoading ? "hidden" : ""
             }`}
             src={address}
