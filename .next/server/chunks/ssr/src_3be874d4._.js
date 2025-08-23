@@ -115,17 +115,17 @@ function Simulator() {
                 className: "jsx-bf798077bfc243a0" + " " + "relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-bf798077bfc243a0" + " " + "absolute top-0 left-1/2 transform -translate-x-1/2 w-[180px] h-[35px] bg-black rounded-b-[22px] z-10"
+                        className: "jsx-bf798077bfc243a0" + " " + "absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Simulator.tsx",
                         lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-bf798077bfc243a0" + " " + "absolute top-0 left-0 right-0 flex justify-between px-4 py-[13px] text-black bg-white font-bold text-[15px] z-5",
+                        className: "jsx-bf798077bfc243a0" + " " + "absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 text-black bg-white font-bold text-[15px] z-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-bf798077bfc243a0" + " " + "ml-6 font-sans",
+                                className: "jsx-bf798077bfc243a0" + " " + "ml-8 font-sans",
                                 children: time.toLocaleTimeString([], {
                                     hour: '2-digit',
                                     minute: '2-digit',
@@ -137,7 +137,7 @@ function Simulator() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-bf798077bfc243a0" + " " + "flex items-center space-x-1 text-black text-xl font-bold font-sans mr-3",
+                                className: "jsx-bf798077bfc243a0" + " " + "flex items-center space-x-1.5 text-black text-xl font-bold font-sans mr-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$tb$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TbAntennaBars5"], {}, void 0, false, {
                                         fileName: "[project]/src/components/Simulator.tsx",
