@@ -22,7 +22,7 @@ const [address, setAddress] = useState<string | null>(null);
 
   return (
     <div className="flex items-center justify-center p-4">
-      <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+      <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-white overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[35px] bg-black rounded-b-[22px] z-10" />
         <div className="absolute right-[-17px] top-[180px] w-[10px] h-[100px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
         <div className="absolute left-[-17px] top-[120px] w-[10px] h-[40px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
@@ -32,7 +32,7 @@ const [address, setAddress] = useState<string | null>(null);
 
         {address && (
           <iframe
-            className={`sim-iframe w-full h-full border-none rounded-[48px] overflow-hidden ${
+            className={`sim-iframe mt-8.5 w-full h-full border-none rounded-b-[48px] overflow-hidden ${
               isLoading ? "hidden" : ""
             }`}
             src={address}
