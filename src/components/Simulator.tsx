@@ -41,15 +41,10 @@ export default function Simulator() {
           </div>
         </div>
 
-        <div className="absolute right-[-17px] top-[180px] w-[10px] h-[100px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
-        <div className="absolute left-[-17px] top-[120px] w-[10px] h-[40px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
-        <div className="absolute left-[-17px] top-[180px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
-        <div className="absolute left-[-17px] top-[250px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
-        <div className="absolute bottom-[12px] left-1/2 transform -translate-x-1/2 w-[120px] h-[6px] bg-[#525253] rounded-[3px] opacity-80 cursor-pointer" />
-
+        {/* iframe */}
         {address && (
           <iframe
-            className={`sim-iframe mt-11.5 w-full h-full border-none rounded-b-[48px] overflow-hidden ${
+            className={`sim-iframe mt-[42px] w-full h-full border-none rounded-b-[48px] ${
               isLoading ? "hidden" : ""
             }`}
             src={address}
@@ -63,12 +58,24 @@ export default function Simulator() {
             <Loading />
           </div>
         )}
-
-        <style jsx global>{`
-          .sim-iframe::-webkit-scrollbar { display: none; }
-          .sim-iframe { -ms-overflow-style: none; scrollbar-width: none; }
-        `}</style>
       </div>
+
+      <div className="absolute right-[calc(50%-210px-5px)] top-[180px] w-[10px] h-[100px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
+      <div className="absolute left-[calc(50%-210px-5px)] top-[120px] w-[10px] h-[40px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
+      <div className="absolute left-[calc(50%-210px-5px)] top-[180px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
+      <div className="absolute left-[calc(50%-210px-5px)] top-[250px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
+
+      <div className="absolute bottom-[50px] left-1/2 transform -translate-x-1/2 w-[120px] h-[6px] bg-[#525253] rounded-[3px] opacity-80" />
+
+      <style jsx global>{`
+        .sim-iframe::-webkit-scrollbar {
+          display: none;
+        }
+        .sim-iframe {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </div>
   );
 }
