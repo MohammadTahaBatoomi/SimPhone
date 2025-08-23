@@ -5,7 +5,7 @@ import Simulator from '@/components/Simulator';
 import AddressInput from '@/components/AddressInput';
 
 export default function Page() {
-  const [address, setAddress] = useState(null);
+const [address, setAddress] = useState<string | null>(null);
 
   useEffect(() => {
     const savedAddress = localStorage.getItem('address');
