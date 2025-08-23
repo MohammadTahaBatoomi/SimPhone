@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface AddressInputProps {
   onSaved?: (address: string) => void;
@@ -24,10 +25,12 @@ function AddressInput({ onSaved }: AddressInputProps) {
 
   return (
     <div className="h-full w-full flex flex-col justify-center items-center bg-black text-white p-4 gap-6">
-      <img
+      <Image
         src="/images/8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.webp"
-        className="w-32 h-32"
+        width={128}
+        height={128}
         alt="apple_logo"
+        className="rounded-full"
       />
 
       <input
