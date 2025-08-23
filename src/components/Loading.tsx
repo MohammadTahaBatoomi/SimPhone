@@ -1,12 +1,14 @@
 import React from "react";
+import Image from 'next/image';
 
 function Loading({ duration = 5 }) {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full rounded-2xl bg-black">
       <div className="mb-6">
-        <img
+        <Image
           src="/images/8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.webp"
-          className="w-30 h-30"
+          width={128}
+          height={128}
           alt="apple_logo"
         />
       </div>
