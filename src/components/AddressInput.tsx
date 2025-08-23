@@ -2,10 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 
-function AddressInput({ onSaved }) {
-  const [address, setAddress] = useState('');
+interface AddressInputProps {
+  onSaved?: (address: string) => void;
+}
 
-  // بارگذاری مقدار اولیه از LocalStorage
+function AddressInput({ onSaved }: AddressInputProps) {
+  const [address, setAddress] = useState<string>('');
+
   useEffect(() => {
     const savedAddress = localStorage.getItem('address');
     if (savedAddress) {
@@ -27,7 +30,6 @@ function AddressInput({ onSaved }) {
         alt="apple_logo"
       />
 
-
       <input
         type="text"
         value={address}
@@ -47,4 +49,3 @@ function AddressInput({ onSaved }) {
 }
 
 export default AddressInput;
-
