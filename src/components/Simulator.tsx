@@ -1,11 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { BiBattery, BiWifi } from "react-icons/bi";
+import { IoBatteryFullOutline } from "react-icons/io5";
+import { IoIosWifi } from "react-icons/io";
+import { TbAntennaBars5 } from "react-icons/tb";
 import Loading from "./Loading";
 
 export default function Simulator() {
   const [isLoading, setIsLoading] = useState(true);
   const [address, setAddress] = useState<string | null>(null);
+  const [time, setTime] = useState(new Date());
   const MAX_LOADING_TIME = 10000;
 
   useEffect(() => {
@@ -16,17 +19,28 @@ export default function Simulator() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex items-center justify-center p-4">
       <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[35px] bg-white rounded-b-[22px] z-10" />
-        <div className="absolute top-2 left-0 right-0 flex justify-between px-4 text-white text-sm z-20">
-          <div>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
-          <div className="flex items-center space-x-2 text-white text-lg">
-            <BiWifi />
-            <BiBattery />
+        <div className="absolute top-2 left-0 right-0 flex justify-between px-4 text-white font-bold text-sm z-20">
+          <div className="ml-8 font-sans">
+            {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })}
+          </div>
+          <div className="flex items-center space-x-1 text-white text-lg font-bold font-sans mr-2">
+            <TbAntennaBars5 />
+            <IoIosWifi />
+            <IoBatteryFullOutline />
           </div>
         </div>
+
         <div className="absolute right-[-17px] top-[180px] w-[10px] h-[100px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
         <div className="absolute left-[-17px] top-[120px] w-[10px] h-[40px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
         <div className="absolute left-[-17px] top-[180px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1] cursor-pointer" />
