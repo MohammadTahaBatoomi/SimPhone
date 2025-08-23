@@ -4,7 +4,7 @@ import Loading from "./Loading";
 
 export default function Simulator() {
   const [isLoading, setIsLoading] = useState(true);
-  const [address, setAddress] = useState(null);
+const [address, setAddress] = useState<string | null>(null);
   const MAX_LOADING_TIME = 10000;
 
   useEffect(() => {
