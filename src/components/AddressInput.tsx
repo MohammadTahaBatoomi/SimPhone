@@ -33,12 +33,12 @@ function AddressInput({ onSaved }) {
         value={address}
         onChange={(e) => setAddress(e.target.value)}
         placeholder="Enter your address"
-        className="w-full max-w-md p-3 rounded-lg bg-gray-800 text-white border border-white focus:outline-none focus:ring-1 focus:ring-white"
+        className="w-full max-w-[350px] p-3 rounded-lg bg-black text-white border border-white focus:outline-none focus:ring-1 focus:ring-white"
       />
 
       <button
         onClick={handleSave}
-        className="w-full max-w-md p-3 bg-white text-black rounded-lg hover:bg-gray-300 transition"
+        className="w-full max-w-[350px] p-3 bg-white text-black rounded-lg hover:bg-gray-300 transition"
       >
         Save Address
       </button>
