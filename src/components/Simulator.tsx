@@ -29,10 +29,13 @@ export default function Simulator() {
   return (
     <div className="flex items-center justify-center p-4">
       <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
+        {/* Notch */}
         <div className="absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10" />
+
+        {/* Status bar */}
         <div className="absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 text-black bg-white font-bold text-[15px] z-5">
           <div className="ml-8 font-sans">
-            {time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })}
+            {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false })}
           </div>
           <div className="flex items-center space-x-1.5 text-black text-xl font-bold font-sans mr-3">
             <TbAntennaBars5 />
@@ -41,18 +44,21 @@ export default function Simulator() {
           </div>
         </div>
 
-        {/* iframe */}
+        {/* iframe wrapper */}
         {address && (
-          <iframe
-            className={`sim-iframe mt-[42px] w-full h-full border-none rounded-b-[48px] ${
-              isLoading ? "hidden" : ""
-            }`}
-            src={address}
-            title="Device Preview"
-            onLoad={() => setIsLoading(false)}
-          />
+          <div className="w-full h-full relative overflow-hidden rounded-b-[48px] mt-[50px]">
+            <iframe
+              className={`sim-iframe absolute top-0 left-[-15px] w-[calc(100%+30px)] h-[calc(100%+30px)] border-none rounded-b-[48px] ${
+                isLoading ? "hidden" : ""
+              }`}
+              src={address}
+              title="Device Preview"
+              onLoad={() => setIsLoading(false)}
+            />
+          </div>
         )}
 
+        {/* Loading overlay */}
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center bg-black rounded-[48px] z-20">
             <Loading />
@@ -60,13 +66,10 @@ export default function Simulator() {
         )}
       </div>
 
-      <div className="absolute right-[calc(50%-210px-5px)] top-[180px] w-[10px] h-[100px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
-      <div className="absolute left-[calc(50%-210px-5px)] top-[120px] w-[10px] h-[40px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
-      <div className="absolute left-[calc(50%-210px-5px)] top-[180px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
-      <div className="absolute left-[calc(50%-210px-5px)] top-[250px] w-[10px] h-[60px] bg-[#424242] rounded-[4px] border border-[#424242] z-[-1]" />
+      {/* Bottom indicators */}
+      <div className="absolute bottom-[65px] left-1/2 transform -translate-x-1/2 w-[130px] h-[6px] bg-[#525253] rounded-[3px] opacity-80" />
 
-      <div className="absolute bottom-[50px] left-1/2 transform -translate-x-1/2 w-[120px] h-[6px] bg-[#525253] rounded-[3px] opacity-80" />
-
+      {/* Scrollbar مخفی */}
       <style jsx global>{`
         .sim-iframe::-webkit-scrollbar {
           display: none;
