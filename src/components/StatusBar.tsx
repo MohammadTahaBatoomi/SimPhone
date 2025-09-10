@@ -30,7 +30,6 @@ export default function StatusBar({ time, bgColor = "#000000", onDoubleClick, on
       return "black";
     }
     
-    // محاسبه روشنایی
     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
     return brightness > 128 ? "black" : "white";
   };
@@ -46,7 +45,7 @@ export default function StatusBar({ time, bgColor = "#000000", onDoubleClick, on
       onClick={onClick}
       onDoubleClick={onDoubleClick}
     >
-      <div className="ml-8 font-sans">
+      <div className="ml-8 font-sans text-[16px]">
         {time.toLocaleTimeString([], {
           hour: "2-digit",
           minute: "2-digit",
@@ -54,7 +53,7 @@ export default function StatusBar({ time, bgColor = "#000000", onDoubleClick, on
         })}
       </div>
 
-      <div className="flex items-center space-x-1.5 text-xl font-bold font-sans mr-3">
+      <div className="flex items-center space-x-1.5 text-[20px] font-bold font-sans mr-3">
         <TbAntennaBars5 />
         <IoIosWifi />
         <IoBatteryFullOutline />

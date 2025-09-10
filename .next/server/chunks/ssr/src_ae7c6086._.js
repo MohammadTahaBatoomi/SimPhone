@@ -138,7 +138,6 @@ function StatusBar({ time, bgColor = "#000000", onDoubleClick, onClick }) {
         } else {
             return "black";
         }
-        // محاسبه روشنایی
         const brightness = (r * 299 + g * 587 + b * 114) / 1000;
         return brightness > 128 ? "black" : "white";
     };
@@ -153,7 +152,7 @@ function StatusBar({ time, bgColor = "#000000", onDoubleClick, onClick }) {
         onDoubleClick: onDoubleClick,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "ml-8 font-sans",
+                className: "ml-8 font-sans text-[16px]",
                 children: time.toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit",
@@ -161,37 +160,37 @@ function StatusBar({ time, bgColor = "#000000", onDoubleClick, onClick }) {
                 })
             }, void 0, false, {
                 fileName: "[project]/src/components/StatusBar.tsx",
-                lineNumber: 49,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center space-x-1.5 text-xl font-bold font-sans mr-3",
+                className: "flex items-center space-x-1.5 text-[20px] font-bold font-sans mr-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$tb$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TbAntennaBars5"], {}, void 0, false, {
                         fileName: "[project]/src/components/StatusBar.tsx",
-                        lineNumber: 58,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IoIosWifi"], {}, void 0, false, {
                         fileName: "[project]/src/components/StatusBar.tsx",
-                        lineNumber: 59,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IoBatteryFullOutline"], {}, void 0, false, {
                         fileName: "[project]/src/components/StatusBar.tsx",
-                        lineNumber: 60,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/StatusBar.tsx",
-                lineNumber: 57,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/StatusBar.tsx",
-        lineNumber: 39,
+        lineNumber: 38,
         columnNumber: 5
     }, this);
 }
@@ -234,7 +233,7 @@ function Simulator() {
         return ()=>clearInterval(interval);
     }, []);
     const askForColor = ()=>{
-        const input = window.prompt("کد رنگ را وارد کنید (مثال: #1eb25a یا rgb(30,178,90))", themeColor);
+        const input = window.prompt("کد رنگ را وارد کنید", themeColor);
         if (!input) return;
         const value = input.trim();
         const hexRegex = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
@@ -243,7 +242,7 @@ function Simulator() {
             setThemeColor(value);
             localStorage.setItem("themeColor", value);
         } else {
-            alert("فرمت رنگ نامعتبر است. مثال: #1eb25a یا rgb(30,178,90)");
+            alert("فرمت رنگ نامعتبر است.");
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {

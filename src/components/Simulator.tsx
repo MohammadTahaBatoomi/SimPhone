@@ -30,7 +30,7 @@ export default function Simulator() {
 
   const askForColor = () => {
     const input = window.prompt(
-      "کد رنگ را وارد کنید (مثال: #1eb25a یا rgb(30,178,90))",
+      "کد رنگ را وارد کنید",
       themeColor
     );
     if (!input) return;
@@ -41,7 +41,7 @@ export default function Simulator() {
       setThemeColor(value);
       localStorage.setItem("themeColor", value);
     } else {
-      alert("فرمت رنگ نامعتبر است. مثال: #1eb25a یا rgb(30,178,90)");
+      alert("فرمت رنگ نامعتبر است.");
     }
   };
 
