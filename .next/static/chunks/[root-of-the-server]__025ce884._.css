@@ -534,6 +534,10 @@
 @layer components;
 
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+
   .absolute {
     position: absolute;
   }
@@ -851,6 +855,22 @@
 
   .border-white {
     border-color: var(--color-white);
+  }
+
+  .bg-\[\#1eb25a\] {
+    background-color: #1eb25a;
+  }
+
+  .bg-\[\#1eb25a\]\/30 {
+    background-color: rgba(30, 178, 90, .3);
+    background-color: color(display-p3 .331325 .687831 .38938 / .3);
+    background-color: lab(64.0186% -53.0625 33.8449 / .3);
+  }
+
+  .bg-\[\#1eb25a\]\/90 {
+    background-color: rgba(30, 178, 90, .9);
+    background-color: color(display-p3 .331325 .687831 .38938 / .9);
+    background-color: lab(64.0186% -53.0625 33.8449 / .9);
   }
 
   .bg-\[\#525253\] {

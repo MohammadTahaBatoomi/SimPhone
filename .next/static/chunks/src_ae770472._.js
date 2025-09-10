@@ -76,42 +76,147 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 __turbopack_context__.s([
     "default",
-    ()=>IframeWrapper
+    ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 "use client";
 ;
 ;
-function IframeWrapper(param) {
+;
+const IframeWrapper = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(_c = (param, ref)=>{
     let { address, isLoading, onLoad } = param;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-bf798077bfc243a0" + " " + "w-full h-full relative overflow-hidden rounded-b-[48px] mt-[50px]",
+        className: "jsx-eb60fe823c4f3d24" + " " + "w-full h-full relative overflow-hidden rounded-b-[48px] mt-[50px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                ref: ref,
                 src: address,
                 title: "Device Preview",
                 onLoad: onLoad,
-                className: "jsx-bf798077bfc243a0" + " " + "sim-iframe absolute top-0 left-[-22px] w-[calc(100%+30px)] pb-20 h-[calc(100%+30px)] border-none rounded-b-[48px] ".concat(isLoading ? "hidden" : "")
+                className: "jsx-eb60fe823c4f3d24" + " " + "sim-iframe absolute top-0 left-[-22px] w-[calc(100%+30px)] pb-20 h-[calc(100%+30px)] border-none rounded-b-[48px] ".concat(isLoading ? "hidden" : "")
             }, void 0, false, {
                 fileName: "[project]/src/components/IframeWrapper.tsx",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this),
+                lineNumber: 14,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "bf798077bfc243a0",
+                id: "eb60fe823c4f3d24",
                 children: ".sim-iframe::-webkit-scrollbar{display:none}.sim-iframe{-ms-overflow-style:none;scrollbar-width:none}"
-            }, void 0, false, void 0, this)
+            }, void 0, false, void 0, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/IframeWrapper.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
+        columnNumber: 7
+    }, ("TURBOPACK compile-time value", void 0));
+});
+_c1 = IframeWrapper;
+IframeWrapper.displayName = "IframeWrapper";
+const __TURBOPACK__default__export__ = IframeWrapper;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "IframeWrapper$forwardRef");
+__turbopack_context__.k.register(_c1, "IframeWrapper");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/StatusBar.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>StatusBar
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/io5/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/io/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$tb$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/tb/index.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function StatusBar(param) {
+    let { time, bgColor = "#000000", onDoubleClick, onClick } = param;
+    const getTextColor = (bgColor)=>{
+        let r, g, b;
+        if (bgColor.startsWith('#')) {
+            const hex = bgColor.replace('#', '');
+            r = parseInt(hex.substr(0, 2), 16);
+            g = parseInt(hex.substr(2, 2), 16);
+            b = parseInt(hex.substr(4, 2), 16);
+        } else if (bgColor.startsWith('rgb')) {
+            const matches = bgColor.match(/\d+/g);
+            if (matches) {
+                [r, g, b] = matches.map(Number);
+            } else {
+                return "black";
+            }
+        } else {
+            return "black";
+        }
+        // محاسبه روشنایی
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 128 ? "black" : "white";
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 font-bold text-[15px] z-5",
+        style: {
+            backgroundColor: bgColor,
+            color: getTextColor(bgColor),
+            transition: "background-color 0.3s ease, color 0.3s ease"
+        },
+        onClick: onClick,
+        onDoubleClick: onDoubleClick,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "ml-8 font-sans",
+                children: time.toLocaleTimeString([], {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false
+                })
+            }, void 0, false, {
+                fileName: "[project]/src/components/StatusBar.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center space-x-1.5 text-xl font-bold font-sans mr-3",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$tb$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TbAntennaBars5"], {}, void 0, false, {
+                        fileName: "[project]/src/components/StatusBar.tsx",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoIosWifi"], {}, void 0, false, {
+                        fileName: "[project]/src/components/StatusBar.tsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoBatteryFullOutline"], {}, void 0, false, {
+                        fileName: "[project]/src/components/StatusBar.tsx",
+                        lineNumber: 60,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/StatusBar.tsx",
+                lineNumber: 57,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/StatusBar.tsx",
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
-_c = IframeWrapper;
+_c = StatusBar;
 var _c;
-__turbopack_context__.k.register(_c, "IframeWrapper");
+__turbopack_context__.k.register(_c, "StatusBar");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -127,11 +232,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Loading.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$IframeWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/IframeWrapper.tsx [app-client] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module './StatusBar'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$StatusBar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/StatusBar.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -144,11 +245,15 @@ function Simulator() {
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const [address, setAddress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [time, setTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(new Date());
+    const iframeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [themeColor, setThemeColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("#999995");
     const MAX_LOADING_TIME = 10000;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Simulator.useEffect": ()=>{
             const savedAddress = localStorage.getItem("address");
             if (savedAddress) setAddress(savedAddress);
+            const savedColor = localStorage.getItem("themeColor");
+            if (savedColor) setThemeColor(savedColor);
             const timer = setTimeout({
                 "Simulator.useEffect.timer": ()=>setIsLoading(false)
             }["Simulator.useEffect.timer"], MAX_LOADING_TIME);
@@ -160,15 +265,26 @@ function Simulator() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Simulator.useEffect": ()=>{
             const interval = setInterval({
-                "Simulator.useEffect.interval": ()=>{
-                    setTime(new Date());
-                }
+                "Simulator.useEffect.interval": ()=>setTime(new Date())
             }["Simulator.useEffect.interval"], 1000);
             return ({
                 "Simulator.useEffect": ()=>clearInterval(interval)
             })["Simulator.useEffect"];
         }
     }["Simulator.useEffect"], []);
+    const askForColor = ()=>{
+        const input = window.prompt("کد رنگ را وارد کنید (مثال: #1eb25a یا rgb(30,178,90))", themeColor);
+        if (!input) return;
+        const value = input.trim();
+        const hexRegex = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+        const rgbRegex = /^rgba?\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}(?:\s*,\s*(0|1|0?\.\d+))?\s*\)$/;
+        if (hexRegex.test(value) || rgbRegex.test(value)) {
+            setThemeColor(value);
+            localStorage.setItem("themeColor", value);
+        } else {
+            alert("فرمت رنگ نامعتبر است. مثال: #1eb25a یا rgb(30,178,90)");
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex items-center justify-center p-4",
         children: [
@@ -176,61 +292,65 @@ function Simulator() {
                 className: "relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10"
+                        className: "absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10 pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Simulator.tsx",
-                        lineNumber: 32,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StatusBar, {
-                        time: time
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$StatusBar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        time: time,
+                        bgColor: themeColor,
+                        onClick: askForColor,
+                        onDoubleClick: askForColor
                     }, void 0, false, {
                         fileName: "[project]/src/components/Simulator.tsx",
-                        lineNumber: 35,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     address && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$IframeWrapper$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        ref: iframeRef,
                         address: address,
                         isLoading: isLoading,
                         onLoad: ()=>setIsLoading(false)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Simulator.tsx",
-                        lineNumber: 39,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this),
                     isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 flex items-center justify-center bg-black rounded-[48px] z-20",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Loading$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/Simulator.tsx",
-                            lineNumber: 49,
+                            lineNumber: 66,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Simulator.tsx",
-                        lineNumber: 48,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Simulator.tsx",
-                lineNumber: 30,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute bottom-[65px] left-1/2 transform -translate-x-1/2 w-[130px] h-[6px] bg-[#525253] rounded-[3px] opacity-80"
             }, void 0, false, {
                 fileName: "[project]/src/components/Simulator.tsx",
-                lineNumber: 55,
+                lineNumber: 71,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Simulator.tsx",
-        lineNumber: 29,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
-_s(Simulator, "zaYPYrW4P+MaNBhte9o55c14RCM=");
+_s(Simulator, "324WILjMBOL1+WNDMYKdZwfFvAE=");
 _c = Simulator;
 var _c;
 __turbopack_context__.k.register(_c, "Simulator");
@@ -383,4 +503,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_7eab90b7._.js.map
+//# sourceMappingURL=src_ae770472._.js.map
