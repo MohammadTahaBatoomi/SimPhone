@@ -4,6 +4,7 @@ import { IoBatteryFullOutline } from "react-icons/io5";
 import { IoIosWifi } from "react-icons/io";
 import { TbAntennaBars5 } from "react-icons/tb";
 import Loading from "./Loading";
+import IframeWrapper from "./IframeWrapper";
 
 export default function Simulator() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,16 +51,11 @@ export default function Simulator() {
 
         {/* iframe wrapper */}
         {address && (
-          <div className="w-full h-full relative overflow-hidden rounded-b-[48px] mt-[50px]">
-            <iframe
-              className={`sim-iframe absolute top-0 left-[-22px] w-[calc(100%+30px)] pb-20 h-[calc(100%+30px)] border-none rounded-b-[48px] ${
-                isLoading ? "hidden" : ""
-              }`}
-              src={address}
-              title="Device Preview"
-              onLoad={() => setIsLoading(false)}
-            />
-          </div>
+          <IframeWrapper
+            address={address}
+            isLoading={isLoading}
+            onLoad={() => setIsLoading(false)}
+          />
         )}
 
         {/* Loading overlay */}
@@ -72,17 +68,6 @@ export default function Simulator() {
 
       {/* Bottom indicators */}
       <div className="absolute bottom-[65px] left-1/2 transform -translate-x-1/2 w-[130px] h-[6px] bg-[#525253] rounded-[3px] opacity-80" />
-
-      {/* Scrollbar مخفی */}
-      <style jsx global>{`
-        .sim-iframe::-webkit-scrollbar {
-          display: none;
-        }
-        .sim-iframe {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </div>
   );
 }
