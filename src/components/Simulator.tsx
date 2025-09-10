@@ -72,7 +72,7 @@ export default function Simulator() {
         )}
       </div>
 
-      <div className="absolute bottom-[65px] left-1/2 transform -translate-x-1/2 w-[130px] h-[6px] bg-[#525253] rounded-[3px] opacity-80" />
+      <div className="absolute bottom-[60px] left-1/2 transform -translate-x-1/2 w-[140px] h-[6px] bg-[#858585] rounded-[3px] opacity-80" />
     </div>
   );
 }
