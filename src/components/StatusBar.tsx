@@ -11,7 +11,7 @@ interface StatusBarProps {
   onClick?: () => void;
 }
 
-export default function StatusBar({ time, bgColor = "#000000", onDoubleClick, onClick }: StatusBarProps) {
+export default function StatusBar({ time, bgColor = "#000000" }: StatusBarProps) {
   const getTextColor = (bgColor: string) => {
     let r, g, b;
     if (bgColor.startsWith('#')) {
@@ -36,14 +36,12 @@ export default function StatusBar({ time, bgColor = "#000000", onDoubleClick, on
 
   return (
     <div
-      className="absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 font-bold text-[15px] z-5"
+      className="absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 font-bold text-[15px] z-5 "
       style={{ 
         backgroundColor: bgColor, 
         color: getTextColor(bgColor),
         transition: "background-color 0.3s ease, color 0.3s ease"
       }}
-      onClick={onClick}
-      onDoubleClick={onDoubleClick}
     >
       <div className="ml-8 font-sans text-[16px]">
         {time.toLocaleTimeString([], {

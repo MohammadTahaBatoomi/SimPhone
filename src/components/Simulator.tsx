@@ -48,9 +48,13 @@ export default function Simulator() {
   return (
     <div className="flex items-center justify-center p-4">
       <div className="relative w-[420px] h-[890px] rounded-[60px] border-[14px] border-black bg-black overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.2)]">
-        <div className="absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10 pointer-events-none" />
+        <div
+          className="absolute top-[7px] left-1/2 transform -translate-x-1/2 w-[130px] h-[35px] bg-black rounded-[22px] z-10 cursor-pointer"
+          onClick={askForColor}
+          title="برای تغییر رنگ کلیک کنید"
+        />
 
-        <StatusBar time={time} bgColor={themeColor} onClick={askForColor} onDoubleClick={askForColor} />
+        <StatusBar time={time} bgColor={themeColor} />
 
         {address && (
           <IframeWrapper
