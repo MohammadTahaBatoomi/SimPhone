@@ -35,7 +35,11 @@ export default function Simulator() {
         {/* Status bar */}
         <div className="absolute top-0 left-0 right-0 flex justify-between py-3.5 px-4 text-black bg-white font-bold text-[15px] z-5">
           <div className="ml-8 font-sans">
-            {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false })}
+            {time.toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: false,
+            })}
           </div>
           <div className="flex items-center space-x-1.5 text-black text-xl font-bold font-sans mr-3">
             <TbAntennaBars5 />
@@ -48,7 +52,7 @@ export default function Simulator() {
         {address && (
           <div className="w-full h-full relative overflow-hidden rounded-b-[48px] mt-[50px]">
             <iframe
-              className={`sim-iframe absolute top-0 left-[-15px] w-[calc(100%+30px)] h-[calc(100%+30px)] border-none rounded-b-[48px] ${
+              className={`sim-iframe absolute top-0 left-[-22px] w-[calc(100%+30px)] pb-20 h-[calc(100%+30px)] border-none rounded-b-[48px] ${
                 isLoading ? "hidden" : ""
               }`}
               src={address}
