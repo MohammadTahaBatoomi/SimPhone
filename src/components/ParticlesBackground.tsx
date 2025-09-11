@@ -24,7 +24,7 @@ export default function ParticlesBackground() {
       fpsLimit: 60,
       interactivity: {
         events: {
-          onHover: { enable: true, mode: "repulse" },
+          onHover: { enable: false, mode: "repulse" },
           onClick: { enable: false, mode: "push" },
           resize: { enable: true },
         },
