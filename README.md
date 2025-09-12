@@ -10,7 +10,6 @@ Built with **React**, **Next.js**, and **Tailwind CSS**, it offers a highly cust
 - Realistic iPhone frame simulation
 - Display of time, network, and battery icons
 - Advanced loading animation
-- Hidden scrollbar for better UX
 - Connects to a local server for dynamic content
 
 ---
